@@ -1,0 +1,6 @@
+# Pipeline Scratch Notes
+Temporary notes on dataset exploration:
+- 10 classes in Fashion-MNIST: T-shirt/top, Trouser, Pullover, Dress, Coat, Sandal, Shirt, Sneaker, Bag, Ankle boot.
+- 60,000 train images, 10,000 test images.
+- Pixel intensity ranges from 0 to 255 grayscale.
+- Needs normalization to [0, 1] before feeding into Dense layers.
