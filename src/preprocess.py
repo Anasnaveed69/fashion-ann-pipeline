@@ -34,9 +34,11 @@ def preprocess_data(
     test_images = np.load(os.path.join(raw_dir, "test_images.npy"))
     test_labels = np.load(os.path.join(raw_dir, "test_labels.npy"))
 
-    print(f"[PREPROCESS] Normalizing pixel values to [0.0, 1.0]...")
-    x_train_norm = train_images.astype(np.float32) / 255.0
-    x_test_norm = test_images.astype(np.float32) / 255.0
+    print(f"[PREPROCESS] [teammate-sim] Normalizing using Z-score standardization (mean=0, std=1)...")
+    mean_val = np.mean(train_images.astype(np.float32))
+    std_val = np.std(train_images.astype(np.float32)) + 1e-7
+    x_train_norm = (train_images.astype(np.float32) - mean_val) / std_val
+    x_test_norm = (test_images.astype(np.float32) - mean_val) / std_val
 
     print(f"[PREPROCESS] Splitting validation set (val_size={val_size}, seed={seed})...")
     x_train_split, x_val_split, y_train_split, y_val_split = train_test_split(
