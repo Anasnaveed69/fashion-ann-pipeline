@@ -1,0 +1,32 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+.env
+
+# Python Bytecode and Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints/
+
+# DVC Local Cache and Temp
+.dvc/cache/
+.dvc/tmp/
+
+# DVC Tracked Artifacts / Models (DVC handles these)
+*.h5
+models/*.h5
+data/raw/
+data/processed/
+
+# System / OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Credentials & Tokens (Google OAuth / Drive)
+.dvc/tmp/gdrive-user-credentials.json
+*credentials*.json
+*token*.json
+client_secrets*.json
