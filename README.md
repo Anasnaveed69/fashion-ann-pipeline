@@ -46,3 +46,6 @@ fashion-ann-pipeline/
    ```bash
    dvc repro
    ```
+
+<!-- Hotfix: verified environment requirements and seed reproduction -->
+
