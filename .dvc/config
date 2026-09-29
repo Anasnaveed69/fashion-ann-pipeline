@@ -1,4 +1,4 @@
 [core]
-    remote = gdrive_storage
-['remote "gdrive_storage"']
-    url = gdrive://1A2B3C4D5E6F7G8H9I0J_fashion_ann_pipeline
+    remote = gdriveremote
+['remote "gdriveremote"']
+    url = gdrive://<YOUR_FOLDER_ID>
