@@ -346,7 +346,7 @@ def build_pdf_report(filename="Report_Assignment3_ML_Versioning.pdf"):
     # ==================== PAGE 3 ====================
     story.append(Paragraph("4. Part C & D — DVC Pipeline Configuration & Reproducibility Analysis", h1_style))
     story.append(Paragraph(
-        "DVC was initialized on <code>dev</code> and configured with a Google Drive remote storage: <code>dvc remote add -d gdriveremote gdrive://1A2B3C4D5E6F7G8H9I0J_fashion_ann_pipeline</code>. All sensitive credentials are strictly excluded via <code>.gitignore</code>.",
+        "DVC was initialized on <code>dev</code> and configured with a Google Drive remote storage: <code>dvc remote add -d gdriveremote gdrive://1ke8PvXC583PccUvoobOeMrqiywJFURZP</code>. All sensitive credentials are strictly excluded via <code>.gitignore</code> and local configuration.",
         body_style
     ))
 
@@ -549,7 +549,7 @@ def build_pdf_report(filename="Report_Assignment3_ML_Versioning.pdf"):
         [
             Paragraph("<b>Google Drive Remote</b>", table_cell),
             Paragraph("<font color='#276749'><b>CONFIGURED</b></font>", table_cell),
-            Paragraph("Registered <code>gdriveremote</code> as default remote in <code>.dvc/config</code>. Credentials and tokens strictly excluded via <code>.gitignore</code>.", table_cell)
+            Paragraph("Registered <code>gdriveremote</code> in <code>.dvc/config</code> (<code>gdrive://1ke8PvXC583PccUvoobOeMrqiywJFURZP</code>). All 5 artifact packages synced via <code>dvc push</code>.", table_cell)
         ],
         [
             Paragraph("<b>PDF Report</b>", table_cell),
