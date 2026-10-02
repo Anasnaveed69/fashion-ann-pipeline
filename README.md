@@ -12,7 +12,7 @@ The project demonstrates:
 ## Deliverables & Links
 - **GitHub Repository**: [Anasnaveed69/fashion-ann-pipeline](https://github.com/Anasnaveed69/fashion-ann-pipeline)
 - **Google Drive Remote Storage**: [DVC Shared Remote Folder](https://drive.google.com/drive/folders/1ke8PvXC583PccUvoobOeMrqiywJFURZP?usp=sharing)
-- **Official Assignment Report**: [`Report_Assignment3_ML_Versioning.pdf`](./Report_Assignment3_ML_Versioning.pdf) (4-page publication-quality PDF)
+- **Official Assignment Report**: [`Assignment3_ML_Versioning_23L-0764.pdf`](./Assignment3_ML_Versioning_23L-0764.pdf)
 
 ## Project Structure
 ```text
